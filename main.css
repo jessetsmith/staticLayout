@@ -72,7 +72,7 @@ html, body{
     height: 100%;
     transition: color 0.25s, background 0.25s;
     vertical-align: top;
-    margin-right: .2rem;
+    margin-right: .3rem;
     margin-left: .2rem;
     
 
@@ -133,7 +133,7 @@ button {
     background: #ae8525;
     outline: #fdce1f solid .5px;
     padding: 6px 11px;
-    margin-left: 13rem;
+    margin-left: 19rem;
     margin-right: 1rem;
     margin-top: 1.3rem;
     display: inline-block;
@@ -179,9 +179,14 @@ button:hover:before, button:focus:before, button:active:before {
 
 .button-buy-destiny2 {
     display: block;
-    font-size: 12px;
+    font-size: 13px;
+    height: 35px;
+    width: 135px;
     text-decoration: none;
     box-sizing: border-box;
+    margin-top: 1rem;
+    letter-spacing: .01cm;
+    font-weight: lighter;
     
 }
 
@@ -218,6 +223,7 @@ button:after {
     width: 100%;
     height: 500px;
     background-size: cover;
+    
      
     
 }
@@ -272,9 +278,15 @@ video {
       font-family: Arial, Helvetica, sans-serif;
   }
 
-.available-now {
+
+.available-now a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: lighter;
+    color:#f4f3f2;
     cursor: pointer;
 }
+
 .availableNow {
     font-weight: 100;
     line-height: 70px;
@@ -286,7 +298,7 @@ video {
 
 }
 
-.overlay-button button {
+.overlay-button  button {
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -302,28 +314,48 @@ video {
     border-color: #ae8525;
     height: 40px;
     width: 150px;
-    outline-offset: 4px;
-    outline-color: #f5f5f5;
     letter-spacing:.02cm;
     font-weight: lighter;
     cursor: pointer;
-
-
-
   }
 
-.overlay-button a{
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: lighter;
-    color:#f4f3f2;
-    cursor: pointer;
 
+.availableNow button:before {
+    content: '';
+    position: absolute;
+    border: #e1e1e1 solid .5px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: top, right, bottom, left;
+    transition-property: top, right, bottom, left;
+}
 
+.availableNow  button:after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #f5f5f5;
+    transition: 0.25s;
+}
+
+.available-now button:hover:before, .available-now button:focus:before, .available-now button:active:before {
+    top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
 }
 
 #underline-two{
     color:#292e32;
+    opacity: .3;
 }
 .featured-content {
     width: 100%;
@@ -349,13 +381,14 @@ video {
 }
 
 .news-grid {
-    width: 100%;
+    width: 50%;
     height: 500px;
+    display: block;
 }
 .this-week{
-    display: block;
     width: 50%;
-    height: 80%; 
+    height: 79%; 
+    border-radius: 5px;
     margin-top: 2rem;
     margin-left: -4.7rem;
     background-image: url(https://www.bungie.net/pubassets/pkgs/128/128159/FrontpageBanner.jpg?cv=3983621215&av=2662561782);
@@ -363,6 +396,7 @@ video {
     background-repeat: no-repeat;
     background-position: -27rem;
     display: inline-block;
+    position: absolute;
     z-index: 1;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -386,7 +420,7 @@ video {
     z-index: 2;
     border-radius: 0 0 4px 4px;
     padding: 5em 2em 2em;
-    margin-top: 35.5%;
+    margin-top: 32.5%;
     background: linear-gradient(to bottom, rgba(24,28,37,0) 0%, rgba(24,28,37,0.8) 100%);
 }
 
@@ -412,5 +446,187 @@ video {
     width: 340px;
     margin-top: -.45rem;
     margin-left: 2rem;
+    opacity: .3;
+}
+
+.cross-save {
+    width: 22%;
+    height: 80%;
+    margin-top: 1.8rem;
+    margin-left: -3.7rem;
+    display: inline-block;
+    border-radius: 10px;
+    background-image: url(https://www.bungie.net/pubassets/pkgs/126/126612/cross_save_branding_01.jpg?cv=3983621215&av=2662561782);
+    background-size: 250%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+}
+
+.cross-save:hover, .cross-save:focus, .cross-save:active {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+}
+
+#crossSave {
+    color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: relative;
+    margin-top: 20rem;
+    margin-left: 2rem;
+}
+
+#underline-four {
+    color: #43474f;
+    width: 130px;
+    margin-top: -3.3rem;
+    margin-left: 2rem;
+    opacity: .3;
+}
+
+.news-right {
+    width: 25%;
+    height: 500px;
+    display: flexbox;
+    flex-direction: column;
+    z-index: 1;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+}
+
+
+
+.new-light {
+    width: 80%;
+    height: 40%;
+    order: 1;
+    position: absolute;
+    background-image: url(https://www.bungie.net/pubassets/pkgs/124/124577/JB_GM_New_Light_KeyArt_1-1_2.jpg?cv=3983621215&av=2662561782);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    z-index: 1;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+}
+
+.new-light:hover, .news-light:focus, .news-light:active {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+}
+
+
+.new-light-text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    border-radius: 0 0 4px 4px;
+    padding: 5em 2em 2em;
+    background: linear-gradient(to bottom, rgba(24,28,37,0) 0%, rgba(24,28,37,0.8) 100%);
+}
+
+#newLight {
+    color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 2.5rem;
+}
+
+#underline-five {
+    color: #43474f;
+    width: 200px;
+    margin-top: 7rem;
+    margin-left: 2rem;
+    opacity: 1;
+}
+
+.on-pc {
+    width: 80%;
+    height: 37.2%;
+    order: 2;
+    position: absolute;
+    background-image: url(https://www.bungie.net/pubassets/pkgs/124/124575/Steam_Front.jpg?cv=3983621215&av=2662561782);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin-left: 1rem;
+    margin-top: 15rem;
+    z-index: 1;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+}
+
+.on-pc:hover, .on-pc:focus, .on-pc:active {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+}
+
+#onPC {
+    color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 2.5rem;
+}
+
+.on-pc-text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    border-radius: 0 0 4px 4px;
+    padding: 5em 2em 2em;
+    background: linear-gradient(to bottom, rgba(24,28,37,0) 0%, rgba(24,28,37,0.8) 100%);
+}
+
+#underline-six {
+    color: #43474f;
+    width: 175px;
+    margin-top: 7rem;
+    margin-left: 2rem;
+    opacity: 1;
+}
+
+#underline-seven{
+    color:#292e32;
     opacity: .3;
 }
