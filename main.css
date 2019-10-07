@@ -24,8 +24,6 @@ a {
     padding: 0;
     width: 100%;
     height: 70px;
-
-
 }
 
 .nav-top {
@@ -58,8 +56,6 @@ a {
   
 }
 
-
-
 #nav-items{
     display: flex;
     -webkit-box-align: center;
@@ -77,10 +73,21 @@ a {
     transition: color 0.25s, background 0.25s;
     vertical-align: top;
     margin-right: .3rem;
-    margin-left: .2rem;
+    margin-left: .3rem;
+    z-index: 2;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px #f5f5f5(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
     
-
 }
+
+.nav-bucket:hover, .nav-bucket:focus, .nav-bucket:active {
+    box-shadow: 0 0 8px #f5f5f5(0, 0, 0, 0.6);
+  }
 .nav-bucket a{
     text-decoration: none;
     padding:.5em;
@@ -90,9 +97,8 @@ a {
     line-height: 70px;
     cursor: pointer;
 
-
-
 }
+
 
 .nav-bucket:hover{
     background-color: #12171c;
@@ -200,7 +206,7 @@ button:hover:before, button:focus:before, button:active:before {
     align-self: center;
     height: 35px;
     margin-left: auto;
-    margin-right: 1rem;
+    margin-right: 0rem;
 
 }
 
@@ -217,6 +223,27 @@ button:after {
 
 }
 
+
+.search{
+    background-image:url(../staticLayout/searching-magnifying-glass.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    margin-top: 1.5rem;
+    margin-left: .5rem;
+    width: 30px;
+    cursor: pointer;
+}
+
+.globe {
+    background-image:url(../staticLayout/earth-globe.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: .5rem;  
+    margin-top: 1.2rem;
+    width: 30px;
+    cursor: pointer;
+}
+
 .featured-content {
     display: flex;
     justify-content: flex-start;
@@ -227,9 +254,6 @@ button:after {
     width: 100%;
     height: 500px;
     background-size: cover;
-    
-     
-    
 }
 
 video {
@@ -289,17 +313,7 @@ video {
     font-weight: lighter;
     color:#f4f3f2;
     cursor: pointer;
-}
-
-.availableNow {
-    font-weight: 100;
-    line-height: 70px;
-    align-self: center;
-    height: 50px;
-    margin-left: auto;
-    margin-right: 1rem;
-    font-weight: lighter;
-
+    z-index: 2;
 }
 
 .overlay-button button {
@@ -321,6 +335,8 @@ video {
     letter-spacing:.02cm;
     font-weight: lighter;
     cursor: pointer;
+    z-index: 2;
+    
   }
 
  .available-now button {
@@ -388,6 +404,7 @@ video {
     margin-left: 2rem;
 }
 
+
 .little-box {
 
     background-color: #f5f5f5;
@@ -416,7 +433,7 @@ video {
     height: 79%; 
     border-radius: 5px;
     margin-top: 2rem;
-    margin-left: -4.7rem;
+    margin-left: -5rem;
     background-image: url(https://www.bungie.net/pubassets/pkgs/128/128159/FrontpageBanner.jpg?cv=3983621215&av=2662561782);
     background-size: 250%;
     background-repeat: no-repeat;
@@ -698,11 +715,11 @@ video {
     grid-row-start: 1;
     position: left;
     height: 300px;
-    width: 100%;
+    width: 90%;
     background-image: url(https://www.bungie.net/pubassets/pkgs/128/128164/Update_Hotfix_Blog.jpg?cv=3983621215&av=2662561782);
     background-repeat: no-repeat;
     background-size: 100%;
-    
+    z-index: 2;
     background-position: center;
     margin-top: 1rem;
     cursor: pointer;
@@ -716,12 +733,14 @@ video {
     color: #f5f5f5;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 3rem;
-    margin-left: 1rem;
+    margin-left: -2rem;
 }
 
 
 #hotfixText1 {
     font-size: 12px;
+    font-weight: 500;
+
 }
 
 #hotfixText2 {
@@ -731,6 +750,8 @@ video {
 #hotfixText3 {
     font-size: 20px;
 }
+
+
 
 
 
