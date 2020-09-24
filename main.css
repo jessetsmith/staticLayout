@@ -3,20 +3,20 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body{
+html,
+body {
     margin: 0;
     padding: 0;
     background-color: #12171c;
     background-size: cover;
-    width:  100%;
-
+    width: 100%;
 }
 
 a {
     cursor: pointer;
 }
 
-.nav-main{
+.nav-main {
     display: block;
     font-weight: lighter;
     overflow: hidden;
@@ -33,38 +33,30 @@ a {
     position: relative;
     height: 100%;
     height: 70px;
-
 }
 
-
-.nav-left { 
+.nav-left {
     display: block;
     float: left;
     line-height: 70px;
-
 }
-
 
 .logo-crest {
     display: block;
     margin-right: 2rem;
-    margin-left:0.5rem;
-    margin-top:0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
     width: 8rem;
     height: 80px;
     padding: 0;
-  
 }
 
-#nav-items{
+#nav-items {
     display: flex;
     -webkit-box-align: center;
     flex: 1 0 auto;
     float: left;
-
 }
-
-
 
 .nav-bucket {
     display: inline-block;
@@ -82,25 +74,25 @@ a {
     transition-duration: 0.3s;
     -webkit-transition-property: box-shadow;
     transition-property: box-shadow;
-    
 }
 
-.nav-bucket:hover, .nav-bucket:focus, .nav-bucket:active {
+.nav-bucket:hover,
+.nav-bucket:focus,
+.nav-bucket:active {
     box-shadow: 0 0 8px #f5f5f5(0, 0, 0, 0.6);
-  }
-.nav-bucket a{
+}
+
+.nav-bucket a {
     text-decoration: none;
-    padding:.5em;
+    padding: .5em;
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 100;
     line-height: 70px;
     cursor: pointer;
-
 }
 
-
-.nav-bucket:hover{
+.nav-bucket:hover {
     background-color: #12171c;
     display: inline-block;
     vertical-align: middle;
@@ -130,7 +122,9 @@ a {
     transition-timing-function: ease-out;
 }
 
-.nav-bucket:hover::before, .nav-bucket:focus:before, .nav-bucket:active:before {
+.nav-bucket:hover::before,
+.nav-bucket:focus:before,
+.nav-bucket:active:before {
     -webkit-transform: translateY(0);
     transform: translateY(0);
 }
@@ -155,16 +149,14 @@ button {
     font-weight: 100;
     border: none;
     cursor: pointer;
-    
-  }
+}
 
 button a {
     color: #f4f3f2;
     text-decoration: none;
     cursor: pointer;
-
 }
-   
+
 button:before {
     content: '';
     position: absolute;
@@ -179,13 +171,14 @@ button:before {
     transition-property: top, right, bottom, left;
 }
 
-button:hover:before, button:focus:before, button:active:before {
+button:hover:before,
+button:focus:before,
+button:active:before {
     top: -5px;
-  right: -5px;
-  bottom: -5px;
-  left: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
 }
-
 
 .button-buy-destiny2 {
     display: block;
@@ -197,7 +190,6 @@ button:hover:before, button:focus:before, button:active:before {
     margin-top: 1rem;
     letter-spacing: .01cm;
     font-weight: lighter;
-    
 }
 
 .buyDestiny2 {
@@ -207,7 +199,6 @@ button:hover:before, button:focus:before, button:active:before {
     height: 35px;
     margin-left: auto;
     margin-right: 0rem;
-
 }
 
 button:after {
@@ -220,12 +211,10 @@ button:after {
     bottom: 0;
     border: 1px solid #f5f5f5;
     transition: 0.25s;
-
 }
 
-
-.search{
-    background-image:url(../staticLayout/searching-magnifying-glass.png);
+.search {
+    background-image: url(../staticLayout/searching-magnifying-glass.png);
     background-size: 80%;
     background-repeat: no-repeat;
     margin-top: 1.5rem;
@@ -235,10 +224,10 @@ button:after {
 }
 
 .globe {
-    background-image:url(../staticLayout/earth-globe.png);
+    background-image: url(../staticLayout/earth-globe.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    margin-left: .5rem;  
+    margin-left: .5rem;
     margin-top: 1.2rem;
     width: 30px;
     cursor: pointer;
@@ -265,33 +254,34 @@ video {
     height: 800%;
     left: 0px;
     z-index: 1;
-
 }
-
 
 #overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-  }
- #overlay img{
-    position:absolute;
-    left:0;top:0;
+    margin-left: 10em;
+    margin-top: 5em;
+}
+
+#overlay img {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 350px;
     height: 70px;
-    pointer-events:none;
-    z-index:2;
+    pointer-events: none;
+    z-index: 2;
     margin-left: 12rem;
     margin-top: 2rem;
-  }
+}
 
 #underline-one {
-      width: 350px;
-      margin-top: 7.5rem;
-      margin-left: 12rem;
-      color:#292e32;
-      
-  }
+    width: 350px;
+    margin-top: 7.5rem;
+    margin-left: 12rem;
+    color: #292e32;
+}
 
 .text {
     width: 350px;
@@ -300,18 +290,19 @@ video {
     font-weight: 540;
     text-align: center;
 }
-.on-the-moon {
-      
-      text-transform: uppercase;
-      font-family: Arial, Helvetica, sans-serif;
-  }
 
+#on-the-moon {
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    word-spacing: .5em;
+}
 
-.available-now a{
+.available-now a {
     text-decoration: none;
     font-size: 14px;
     font-weight: lighter;
-    color:#f4f3f2;
+    color: #f4f3f2;
     cursor: pointer;
     z-index: 2;
 }
@@ -332,14 +323,13 @@ video {
     border-color: #ae8525;
     height: 40px;
     width: 150px;
-    letter-spacing:.02cm;
+    letter-spacing: .02cm;
     font-weight: lighter;
     cursor: pointer;
     z-index: 2;
-    
-  }
+}
 
- .available-now button {
+.available-now button {
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -359,8 +349,7 @@ video {
     font-weight: 100;
     border: none;
     cursor: pointer;
-    
-  }
+}
 
 .available-now button:before {
     content: '';
@@ -388,31 +377,30 @@ video {
     transition: 0.25s;
 }
 
-.available-now button:hover:before, .available-now button:focus:before, .available-now button:active:before {
+.available-now button:hover:before,
+.available-now button:focus:before,
+.available-now button:active:before {
     top: -5px;
-  right: -5px;
-  bottom: -5px;
-  left: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
 }
 
-#underline-two{
-    color:#292e32;
+#underline-two {
+    color: #292e32;
     opacity: .3;
 }
+
 .featured-content {
     width: 100%;
     margin-left: 2rem;
 }
 
-
 .little-box {
-
     background-color: #f5f5f5;
     height: 20px;
     width: 80px;
     margin-top: -.5rem;
-    
-    
 }
 
 .featured-title {
@@ -420,7 +408,6 @@ video {
     font-size: 12px;
     text-align: center;
     font-weight: bolder;
-
 }
 
 .news-grid {
@@ -428,16 +415,17 @@ video {
     height: 500px;
     display: block;
 }
-.this-week{
+
+.this-week {
     width: 50%;
-    height: 79%; 
+    height: 79%;
     border-radius: 5px;
     margin-top: 2rem;
     margin-left: -5rem;
-    background-image: url(https://www.bungie.net/pubassets/pkgs/128/128159/FrontpageBanner.jpg?cv=3983621215&av=2662561782);
+    background-image: url("./FrontpageBanner.jpg");
     background-size: 250%;
     background-repeat: no-repeat;
-    background-position: -27rem;
+    background-position: center top;
     display: inline-block;
     position: absolute;
     z-index: 1;
@@ -453,7 +441,9 @@ video {
     cursor: pointer;
 }
 
-.this-week:hover, .this-week:focus, .this-week:active {
+.this-week:hover,
+.this-week:focus,
+.this-week:active {
     -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
 }
@@ -464,7 +454,8 @@ video {
     border-radius: 0 0 4px 4px;
     padding: 5em 2em 2em;
     margin-top: 32.5%;
-    background: linear-gradient(to bottom, rgba(24,28,37,0) 0%, rgba(24,28,37,0.8) 100%);
+    font-weight: bolder;
+    background: linear-gradient(to bottom, rgba(24, 28, 37, 0) 0%, rgba(24, 28, 37, 0.8) 100%);
 }
 
 #thisWeekHeader {
@@ -474,6 +465,7 @@ video {
     font-size: 20px;
     margin-top: 6%;
 }
+
 #thisWeekSubtext {
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
@@ -484,9 +476,9 @@ video {
     opacity: .8;
 }
 
-#underline-three{
+#underline-three {
     color: #292e32;
-    width: 340px;
+    width: 220px;
     margin-top: -.45rem;
     margin-left: 2rem;
     opacity: .3;
@@ -498,9 +490,9 @@ video {
     margin-top: 1.8rem;
     margin-left: -3.7rem;
     display: inline-block;
-    border-radius: 10px;
-    background-image: url(https://www.bungie.net/pubassets/pkgs/126/126612/cross_save_branding_01.jpg?cv=3983621215&av=2662561782);
-    background-size: 250%;
+    border-radius: 5px;
+    background-image: url("Stasis_trailer_1-1.jpg");
+    background-size: 150%;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 1;
@@ -516,7 +508,9 @@ video {
     cursor: pointer;
 }
 
-.cross-save:hover, .cross-save:focus, .cross-save:active {
+.cross-save:hover,
+.cross-save:focus,
+.cross-save:active {
     -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
 }
@@ -526,8 +520,9 @@ video {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     position: relative;
-    margin-top: 20rem;
+    margin-top: 22rem;
     margin-left: 2rem;
+    font-weight: bolder;
 }
 
 #underline-four {
@@ -556,14 +551,12 @@ video {
     cursor: pointer;
 }
 
-
-
 .new-light {
     width: 80%;
     height: 40%;
     order: 1;
     position: absolute;
-    background-image: url(https://www.bungie.net/pubassets/pkgs/124/124577/JB_GM_New_Light_KeyArt_1-1_2.jpg?cv=3983621215&av=2662561782);
+    background-image: url("./MoT_2020_featured_banner_1x1.jpg");
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -583,11 +576,12 @@ video {
     cursor: pointer;
 }
 
-.new-light:hover, .news-light:focus, .news-light:active {
+.new-light:hover,
+.news-light:focus,
+.news-light:active {
     -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
 }
-
 
 .new-light-text {
     width: 100%;
@@ -595,8 +589,9 @@ video {
     position: absolute;
     z-index: 2;
     border-radius: 0 0 4px 4px;
+    font-weight: bolder;
     padding: 5em 2em 2em;
-    background: linear-gradient(to bottom, rgba(24,28,37,0) 0%, rgba(24,28,37,0.8) 100%);
+    background: linear-gradient(to bottom, rgba(24, 28, 37, 0) 0%, rgba(24, 28, 37, 0.8) 100%);
 }
 
 #newLight {
@@ -619,8 +614,8 @@ video {
     height: 37.2%;
     order: 2;
     position: absolute;
-    background-image: url(https://www.bungie.net/pubassets/pkgs/124/124575/Steam_Front.jpg?cv=3983621215&av=2662561782);
-    background-size: 100%;
+    background-image: url("s11_f2P_header.jpg");
+    background-size: 200%;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 5px;
@@ -639,7 +634,9 @@ video {
     cursor: pointer;
 }
 
-.on-pc:hover, .on-pc:focus, .on-pc:active {
+.on-pc:hover,
+.on-pc:focus,
+.on-pc:active {
     -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
 }
@@ -649,6 +646,7 @@ video {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin-top: 2.5rem;
+    font-weight: bolder;
 }
 
 .on-pc-text {
@@ -658,7 +656,7 @@ video {
     z-index: 2;
     border-radius: 0 0 4px 4px;
     padding: 5em 2em 2em;
-    background: linear-gradient(to bottom, rgba(24,28,37,0) 0%, rgba(24,28,37,0.8) 100%);
+    background: linear-gradient(to bottom, rgba(24, 28, 37, 0) 0%, rgba(24, 28, 37, 0.8) 100%);
 }
 
 #underline-six {
@@ -669,8 +667,8 @@ video {
     opacity: 1;
 }
 
-#underline-seven{
-    color:#292e32;
+#underline-seven {
+    color: #292e32;
     opacity: .3;
 }
 
@@ -681,25 +679,22 @@ video {
 }
 
 .little-box2 {
-
     background-color: #f5f5f5;
     height: 20px;
     width: 80px;
     margin-top: -.5rem;
     position: absolute;
-    
-    
 }
 
 .latest-title-text {
     margin-top: .2rem;
 }
+
 .latest-title {
     margin-top: .2rem;
     font-size: 13px;
     text-align: center;
     font-weight: bolder;
-
 }
 
 .latest-updates-items {
@@ -736,11 +731,9 @@ video {
     margin-left: -2rem;
 }
 
-
 #hotfixText1 {
     font-size: 12px;
     font-weight: 500;
-
 }
 
 #hotfixText2 {
@@ -750,8 +743,3 @@ video {
 #hotfixText3 {
     font-size: 20px;
 }
-
-
-
-
-
